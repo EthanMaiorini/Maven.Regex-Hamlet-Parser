@@ -15,6 +15,9 @@ public class HamletParserTest {
 
     @Test
     public void testChangeHamletToLeon() {
+        String s = hamletParser.findHamlet();
+        String y = hamletParser.findHoratio();
+        hamletParser.setHamlettoLeon();
     }
 
     @Test
