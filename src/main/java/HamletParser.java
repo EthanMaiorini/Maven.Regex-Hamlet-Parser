@@ -41,8 +41,9 @@ public class HamletParser {
 
     public String findHoratio(){
         String text = hamletData;
-        String patternString = "[H,h][o,O][R,r][a,A][t,T][I,i][o,O]";
-        Pattern pattern = Pattern.compile(patternString);
+        //String patternString = "[H,h][o,O][R,r][a,A][t,T][I,i][o,O]";
+        String patternString = "horatio";
+        Pattern pattern = Pattern.compile(patternString, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(text);
         hamletData = matcher.replaceAll("Tariq");
         return hamletData;
@@ -50,8 +51,9 @@ public class HamletParser {
 
     public String findHamlet(){
         String text = hamletData;
-        String patternString = "[h,H][a,A][m,M][l,L][e,E][t,T]";
-        Pattern pattern = Pattern.compile(patternString);
+        //String patternString = "[h,H][a,A][m,M][l,L][e,E][t,T]";
+        String patternString = "hamlet";
+        Pattern pattern = Pattern.compile(patternString,Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(text);
         hamletData = matcher.replaceAll("Leon");
         return hamletData;
